@@ -10,6 +10,7 @@ app.use(express.static(publicDirectoryPath))
 
 app.get("/scores", (req, res) => {
   res.send(scores)
+  console.log(res.body);
 });
 
 app.post("/scores", (req, res) => {
